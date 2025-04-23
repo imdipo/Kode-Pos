@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: #f0f2f5;
+    padding: 20px;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    color: #2d3e50;
+    margin-bottom: 20px;
+}
+.search-box {
+    display: flex;
+    margin-bottom: 20px;
+}
+input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+}
+button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 0 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #c0392b;
+}
+.provinsi-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 10px;
+}
+.provinsi-item {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.3s;
+    border: 1px solid #e0e0e0;
+}
+.provinsi-item:hover {
+    background-color: #e74c3c;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.result {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    display: none;
+}
+.result h2 {
+    color: #2d3e50;
+    margin-bottom: 15px;
+}
+.kode-pos-list {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+}
+.kode-pos-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+.kode-pos-item:last-child {
+    border-bottom: none;
+}
+.kode-pos-item span:first-child {
+    font-weight: bold;
+}
+@media (max-width: 600px) {
+    .provinsi-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

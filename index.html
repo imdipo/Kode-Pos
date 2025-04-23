@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kode Pos</title>
+    <link rel="stylesheet" href="Frontend/styles/main.css">
+
+</head>
+<body>
+        <div class="container">
+        <h1>Pencari Kode Pos Indonesia</h1>
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Cari provinsi..." onkeyup="filterProvinsi()">
+            <button onclick="clearSearch()">Clear</button>
+        </div>
+        <div class="provinsi-list" id="provinsi-list"></div>
+        <div class="result" id="result">
+            <h2 id="result-title">Kode Pos Provinsi</h2>
+            <div class="kode-pos-list" id="kode-pos-list"></div>
+        </div>
+    </div>
+    <script src="Frontend/script/Main.js"></script>
+</body>
+</html>
